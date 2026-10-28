@@ -1,5 +1,5 @@
 import type { Citation } from "../types/chat";
-import { resolveHandbookPage } from "./handbook-page-resolver.ts";
+import { resolveHandbookPage } from "./handbook-page-resolver";
 
 export interface NormalizedResult {
   answer: string;

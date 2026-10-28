@@ -1,4 +1,4 @@
-import { HANDBOOK_PAGES } from "./handbook-pages-data.ts";
+import { HANDBOOK_PAGES } from "./handbook-pages-data";
 
 const STOP_WORDS = new Set([
   "this", "that", "with", "from", "have", "were", "what", "when", "your",
@@ -28,7 +28,7 @@ export function resolveHandbookPage(text: string): number | undefined {
   let bestScore = 0;
   let bestPage: number | undefined = undefined;
 
-  const pages = HANDBOOK_PAGES as HandbookPageData[];
+  const pages = HANDBOOK_PAGES;
 
   for (const p of pages) {
     // Skip front matter (cover, table of contents pages 1-5) and back committee directory (pages 68-71)
